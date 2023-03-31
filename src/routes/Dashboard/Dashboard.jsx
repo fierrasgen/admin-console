@@ -3,9 +3,9 @@ import { useLocation } from 'react-router-dom';
 
 import { Menu } from "../../components/Menu/Menu";
 import {ChartWrapper, Content, Title, Wrapper, Info} from "./styles";
-import LineChart from "../../components/LineChart";
-import PieChart from "../../components/PieChart";
-import PolarAreaChart from "../../components/PolarAreaChart";
+import LineChart from "../../components/LineChart/LineChart";
+import PieChart from "../../components/PieChart/PieChart";
+import PolarAreaChart from "../../components/PolarAreaChart/PolarAreaChart";
 import { CPU_DATA } from "../../mocks/data_cpu";
 import { RAM_DATA } from "../../mocks/data_ram";
 import { HDD_DATA } from "../../mocks/data_hdd";
@@ -86,14 +86,6 @@ export const Dashboard = () => {
                             {
                                 data: data.map((data) => data.used),
                                 label: label,
-                                // backgroundColor: [
-                                //     "rgba(75,192,192,1)",
-                                //     "#ecf0f1",
-                                //     "#50AF95",
-                                //     "#f3ba2f",
-                                //     "#2a71d0",
-                                // ],
-                                // borderColor: "black",
                                 borderWidth: 1,
                             },
                         ],
@@ -106,14 +98,6 @@ export const Dashboard = () => {
                             {
                                 data: data.map((data) => data.used),
                                 label: label,
-                                // backgroundColor: [
-                                //     "rgba(75,192,192,1)",
-                                //     "#ecf0f1",
-                                //     "#50AF95",
-                                //     "#f3ba2f",
-                                //     "#2a71d0",
-                                // ],
-                                // borderColor: "black",
                                 borderWidth: 1,
                             },
                         ],
